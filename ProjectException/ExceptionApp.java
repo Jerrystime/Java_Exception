@@ -11,9 +11,9 @@ public class ExceptionApp {
 			System.out.println(2 / 0);	// Java는 0으로 나누는 것을 못하게 되어있는데 0으로 나누려고 하기 때문에 ArithmeticException이 뜨게 된다.
 			System.out.println(4);
 		} catch (ArithmeticException e) {	// 예외 처리할 코드를 catch문 안에 넣어주고, 어떤 예외가 발생할 때 catch문을 실행시킬 지 괄호 안에 넣어준다.
-			System.out.println("잘못된 게산이네요.");	// ArithmeticException이 발생할 경우, 실행할 코드
-		} catch (ArrayIndexOutOfBoundsException e) {	// 예외 처리할 코드를 catch문 안에 넣어주고, 어떤 예외가 발생할 때 catch문을 실행시킬 지 괄호 안에 넣어준다.
-			System.out.println("없는 값을 찾고 계시네요^^.");	// ArrayIndexOutOfBoundsException이 발생할 경우, 실행할 코드
+			System.out.println("계산이 잘못되었습니다.");	// ArithmeticException이 발생할 경우, 실행할 코드
+		} catch (Exception e) {	// 예외 처리할 코드를 catch문 안에 넣어주고, 어떤 예외가 발생할 때 catch문을 실행시킬 지 괄호 안에 넣어준다.
+			System.out.println("먼가 이상합니다. 오류가 발생했습니다.");	// 위 예외 외의 모든 Exception이 발생할 경우, 실행할 코드
 		}	// 예외가 발생하더라도 어플리케이션이 종료되지 않고, 다음 구문을 실행하게 된다.
 		System.out.println(3);
 	}
