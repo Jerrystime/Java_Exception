@@ -1,3 +1,5 @@
 /ExceptionApp.class
 /CheckedExceptionApp.class
 /TryWithResource.class
+/MyException.class
+/ThrowException.class
